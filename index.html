@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Family Book</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Family Book</h1>
+        <img  id="album" width="300px" src="family book cover.jpg">
+        <h3 id="reasons">My family book</h3>
+        <div>
+        <button type="button" onclick="next()">Next</button>
+        </div>
+        <script>
+        var next_image=[
+            "prashant.png",
+            "rashmi.png",
+            "aashi pankaj.jpg"
+        ]
+          var reasons=[
+              "Pranshant Pankaj",
+              "Rashmi Rathi",
+              "Aashi Pankaj"
+          ]
+          function next_image(){
+          document.getElementById("album").src=album[i];
+          document.getElementById("reasons").innerHTML=reasons[i];
+          i++;
+          }
+          </script>
+    </body>
+</html>
